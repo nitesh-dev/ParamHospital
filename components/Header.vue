@@ -59,7 +59,7 @@ function toggleNav(){
                 </div>
             </div>
 
-            <ArrowButton/>
+            <ArrowButton text="Get Appointment"/>
         </div>
     </header>
 

@@ -13,7 +13,7 @@
                 <h1>You Health, Our Priority<br>Welcome to <span>Param Hospital</span></h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy
                     text of the printing and typesetting industry.</p>
-                <ArrowButton></ArrowButton>
+                <ArrowButton text="Get Appointment"></ArrowButton>
                 <div class="buttons">
                     <a href="#">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
