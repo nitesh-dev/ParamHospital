@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto';
+    letter-spacing: 1px;
 }
 
 body {
@@ -13,14 +14,15 @@ body {
     --max-page-width: 1280px;
 
     --color-surface: rgb(255, 255, 255);
-    --color-surface-variant: #F4F4F4;
+    --color-surface-variant: #E8F2FF;
     --color-primary: #143584;
     --color-on-primary: white;
     --color-on-surface: #5E5E5E;
-    --color-on-surface-dark: Black;
+    --color-on-surface-dark: rgb(46, 46, 46);
     --color-on-surface-variant: #7F7F7F;
 
-    --big-font: 42px;
+
+    --big-font: 38px;
     --average-2-font: 24px;
     --average-font: 20px;
     --medium-font: 14px;
