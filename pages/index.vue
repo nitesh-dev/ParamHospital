@@ -9,6 +9,7 @@
     <HomeLanding></HomeLanding>
     <Facilities></Facilities>
     <Treatment></Treatment>
+    <About></About>
     <!-- <HomeLanding></HomeLanding>
     <About></About>
     <Products></Products>
