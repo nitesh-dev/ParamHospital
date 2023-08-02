@@ -8,6 +8,7 @@
     <Header url="/"></Header>
     <HomeLanding></HomeLanding>
     <Facilities></Facilities>
+    <Treatment></Treatment>
     <!-- <HomeLanding></HomeLanding>
     <About></About>
     <Products></Products>
