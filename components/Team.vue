@@ -5,8 +5,8 @@
         <div class="page">
             <h5>Our Team</h5>
             <h2>Meet with our best experts</h2>
-            <div class="card-container">
-                <div class="card" :class="{'active': index == 0}" v-for="item, index in 3">
+            <div class="card-container hide-scroll">
+                <div class="card" :class="{ 'active': index == 0 }" v-for="item, index in 3">
                     <div>
                         <img src="../public/images/members/member1.png" alt="member">
                         <div class="detail">
@@ -56,8 +56,7 @@
                             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
                                 fill="none">
                                 <path
-                                    d="M21 0H1.41421C0.523309 0 0.0771432 1.07714 0.707108 1.70711L20.2929 21.2929C20.9229 21.9229 22 21.4767 22 20.5858V1C22 0.447715 21.5523 0 21 0Z"
-                                     />
+                                    d="M21 0H1.41421C0.523309 0 0.0771432 1.07714 0.707108 1.70711L20.2929 21.2929C20.9229 21.9229 22 21.4767 22 20.5858V1C22 0.447715 21.5523 0 21 0Z" />
                             </svg>
                         </div>
                     </div>
@@ -75,7 +74,7 @@
     margin-bottom: 0.5em;
 }
 
-.team button{
+.team button {
     margin: auto;
     margin-top: -1rem;
 }
@@ -179,5 +178,20 @@
 
 .team .card.active .arrow {
     fill: white;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .team .card-container {
+        grid-template-columns: 300px 300px 300px;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .team .card-container {
+        grid-template-columns: 100% 100% 100%;
+    }
 }
 </style>
