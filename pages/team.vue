@@ -3,16 +3,11 @@
 </script>
 <template>
     <Head>
-        <Title>About</Title>
+        <Title>Team</Title>
     </Head>
-    <Header url="/about"></Header>
-    <OtherLanding name="About"></OtherLanding>
-    <Facilities></Facilities>
-    <Treatment></Treatment>
-    <About></About>
+    <Header url="team"></Header>
+    <OtherLanding name="Team"></OtherLanding>
     <Team></Team>
-    <Review></Review>
-    <Blog></Blog>
     <Contact></Contact>
     <Footer></Footer>
 </template>
