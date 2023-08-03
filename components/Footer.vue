@@ -138,11 +138,11 @@
 
         <hr>
         <p class="copyright">Param Hospital - 2020. Designed by <span>Desiration Hub</span></p>
+        <div class="background"></div>
     </footer>
 </template>
 <style scoped>
 footer {
-    background-color: var(--color-surface-variant);
     margin-top: 8rem;
     position: relative;
 }
@@ -150,6 +150,16 @@ footer {
 footer h3 {
     margin: 0;
     margin-top: 0.5em;
+}
+
+footer .background{
+    background-color: var(--color-surface-variant);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
 }
 
 
@@ -239,7 +249,8 @@ footer .common hr {
 
 }
 
-footer a, footer span {
+footer a,
+footer span {
     display: block;
     margin: 1em 0;
     line-height: 1.3;
@@ -247,7 +258,7 @@ footer a, footer span {
     color: var(--color-on-surface);
 }
 
-footer a:hover{
+footer a:hover {
     color: black;
 }
 
@@ -262,20 +273,20 @@ footer .common div {
 
 /* ----------------- copyright ------------ */
 
-footer>hr{
+footer>hr {
     margin-top: 3rem;
     border: none;
     border-bottom: 1px solid rgb(223, 223, 223);
 }
 
-footer .copyright{
+footer .copyright {
     text-align: center;
     font-size: var(--small-font);
     padding: 1rem 0;
     margin: 0;
 }
 
-footer .copyright span{
+footer .copyright span {
     color: var(--color-primary);
     display: inline;
     font-weight: bold;
@@ -286,18 +297,68 @@ footer .copyright span{
 
 /* -------------------- outline ------------------- */
 
-footer>img{
+footer>img {
     position: absolute;
     bottom: 0;
     width: 400px;
+    z-index: -1;
 }
 
-footer .out-left{
+footer .out-left {
     left: 0;
 }
 
-footer .out-right{
+footer .out-right {
     right: 0;
 }
 
+@media only screen and (max-width: 900px) {
+    footer .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer>img {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    footer .content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    footer .content {
+        grid-template-columns: 100%;
+    }
+
+    footer .left img {
+        margin: auto;
+        display: block;
+    }
+
+    footer .left p {
+        text-align: center;
+    }
+
+    footer .socials {
+        margin: auto;
+    }
+
+    footer .out-left {
+        left: 0;
+        top: 0;
+        bottom: unset;
+    }
+
+    footer>img {
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+    }
+
+}
 </style>
