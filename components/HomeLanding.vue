@@ -278,9 +278,10 @@
     gap: 4px;
 }
 
-.landing .card.vertical p{
+.landing .card.vertical p {
     text-align: center;
 }
+
 .landing .card.vertical {
     display: flex;
     flex-direction: column;
@@ -299,7 +300,7 @@
     bottom: 10%;
 }
 
-.landing .card.card.horizontal .icon{
+.landing .card.card.horizontal .icon {
     background-color: rgba(255, 255, 255, 0.226);
     height: 32px;
     width: 32px;
@@ -308,9 +309,37 @@
     justify-content: center;
     border-radius: 50%;
 }
-.landing .card.card.horizontal svg{
+
+.landing .card.card.horizontal svg {
     width: 16px;
     height: 16px;
     display: block;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .landing .image-holder img.circle {
+        height: 65%;
+    }
+
+    .landing .image-holder img.doctor {
+        height: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+    .landing .card.vertical {
+        left: 40px;
+        top: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .landing .card.vertical {
+        display: none;
+    }
 }
 </style>
