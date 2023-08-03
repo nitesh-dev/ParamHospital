@@ -140,18 +140,18 @@ button.icon {
 
 
 
-/* 
+
 @media only screen and (max-width: 700px) {
     .page {
         padding: 0 16px;
     }
 
     h1 {
-        font-size: calc(var(--big-font) - 8px);
+        font-size: calc(var(--big-font) - 12px);
     }
     
     h2 {
-        font-size: calc(var(--average-2-font) - 2px);
+        font-size: calc(var(--average-2-font) - 4px);
     }
     
     h3 {
@@ -164,4 +164,4 @@ button.icon {
     .page {
         padding: 0 12px;
     }
-} */
+}

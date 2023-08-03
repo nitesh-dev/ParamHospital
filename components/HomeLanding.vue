@@ -11,7 +11,8 @@
                     <span>Multi Specialty Hospital</span>
                 </p>
                 <h1>You Health, Our Priority<br>Welcome to <span>Param Hospital</span></h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy
+                <p class="message">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is
+                    simply dummy
                     text of the printing and typesetting industry.</p>
                 <ArrowButton text="Get Appointment"></ArrowButton>
                 <div class="buttons">
@@ -329,7 +330,7 @@
 
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
     .landing .card.vertical {
         left: 40px;
         top: 60%;
@@ -341,5 +342,24 @@
     .landing .card.vertical {
         display: none;
     }
+
+    .landing .message {
+        max-width: 300px;
+    }
+
+    .landing .image-holder img.circle {
+        height: 50%;
+    }
+
+    .landing .image-holder img.doctor {
+        height: 50%;
+    }
+
+    .landing .card.horizontal {
+
+        bottom: 5%;
+    }
+
+
 }
 </style>
