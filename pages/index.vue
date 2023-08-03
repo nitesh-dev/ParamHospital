@@ -14,17 +14,6 @@
     <Review></Review>
     <Blog></Blog>
     <Contact></Contact>
-
-
-
-
-    <!-- <HomeLanding></HomeLanding>
-    <About></About>
-    <Products></Products>
-    <Testimonial></Testimonial>
-    <Gallery></Gallery>
-    <Blogs></Blogs>
-    <ContactUs></ContactUs>
-    <Footer></Footer> -->
+    <Footer></Footer>
 </template>
 <style scoped></style>
