@@ -1,4 +1,29 @@
 <script setup lang='ts'>
+
+import member1 from '~/public/images/members/member1.png'
+import member2 from '~/public/images/members/member2.png'
+import member3 from '~/public/images/members/member3.png'
+
+const data = Array<{
+    name: string,
+    image: string,
+}>()
+
+
+data.push({
+    name: 'Dr. Bharat Sutariya',
+    image: member1
+})
+
+data.push({
+    name: 'Dr.Makenna Dias',
+    image: member2
+})
+
+data.push({
+    name: 'Dr.Allison Korsgaard',
+    image: member3
+}) 
 </script>
 <template>
     <section class="team">
@@ -6,11 +31,11 @@
             <h5>Our Team</h5>
             <h2>Meet with our best experts</h2>
             <div class="card-container hide-scroll">
-                <div class="card" :class="{ 'active': index == 0 }" v-for="item, index in 3">
+                <div class="card" :class="{ 'active': index == 0 }" v-for="item, index in data">
                     <div>
-                        <img src="../public/images/members/member1.png" alt="member">
+                        <img :src="item.image" alt="member">
                         <div class="detail">
-                            <p>Dr. Bharat Sutariya</p>
+                            <p>{{ item.name }}</p>
                             <hr>
                             <div class="social">
                                 <!-- facebook -->
