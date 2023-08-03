@@ -12,4 +12,8 @@
     <Contact></Contact>
     <Footer></Footer>
 </template>
-<style scoped></style>
+<style scoped>
+.review{
+    margin-top: 0;
+}
+</style>
