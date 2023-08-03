@@ -10,6 +10,11 @@
     <Facilities></Facilities>
     <Treatment></Treatment>
     <About></About>
+    <Team></Team>
+
+
+
+
     <!-- <HomeLanding></HomeLanding>
     <About></About>
     <Products></Products>
