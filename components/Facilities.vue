@@ -58,13 +58,11 @@ const scrollContainer = ref<HTMLDivElement>()
 function scrollLeft() {
     if (scrollContainer.value == undefined) return
     scrollContainer.value.scrollLeft = 0
-    console.log('left')
 }
 
 function scrollRight() {
     if (scrollContainer.value == undefined) return
     scrollContainer.value.scrollLeft = scrollContainer.value.scrollWidth
-    console.log(scrollContainer.value.scrollWidth)
 }
 
 
