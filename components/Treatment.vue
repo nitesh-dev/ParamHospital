@@ -404,6 +404,7 @@ function scrollRight() {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    display: none;
 }
 
 .treatment .button-holder button {
@@ -438,6 +439,10 @@ function scrollRight() {
 
     .treatment h2 {
         margin-bottom: 1rem;
+    }
+
+    .treatment .button-holder{
+        display: flex;
     }
 
 }

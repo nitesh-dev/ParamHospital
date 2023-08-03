@@ -221,6 +221,7 @@ function scrollRight() {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    display: none;
 }
 
 .blog .button-holder button {
@@ -253,6 +254,14 @@ function scrollRight() {
 
     .icons-button {
         display: block;
+    }
+
+    .blog .button-holder {
+        display: flex;
+    }
+
+    .blog .card .image-holder img {
+        height: 250px;
     }
 }
 </style>
