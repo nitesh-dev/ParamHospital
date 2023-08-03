@@ -11,6 +11,7 @@
     <Treatment></Treatment>
     <About></About>
     <Team></Team>
+    <Review></Review>
 
 
 
