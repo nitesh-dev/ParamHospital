@@ -13,6 +13,7 @@
     <Team></Team>
     <Review></Review>
     <Blog></Blog>
+    <Contact></Contact>
 
 
 
