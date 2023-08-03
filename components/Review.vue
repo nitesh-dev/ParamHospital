@@ -177,7 +177,7 @@ slideContent.push({
 .review>.right {
     position: absolute;
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.15;
     top: 0;
 }
 
@@ -194,7 +194,7 @@ slideContent.push({
 
 /* --------------------------- mini icons ---------------- */
 
-.review .mini{
+.review .mini {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -202,23 +202,23 @@ slideContent.push({
     z-index: -1;
 }
 
-.review .top-left{
+.review .top-left {
     left: 20%;
     top: 110px;
 }
 
-.review .top-right{
+.review .top-right {
     right: 20%;
     top: 70px;
 }
 
-.review .bottom-left{
+.review .bottom-left {
     left: 10%;
     bottom: 40px;
 }
 
 
-.review .bottom-right{
+.review .bottom-right {
     right: 5%;
     bottom: 70px;
 }
@@ -295,5 +295,41 @@ slideContent.push({
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .review .mini {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .review .top-left {
+        left: 20%;
+        top: 110px;
+    }
+
+    .review .top-right {
+        right: 20%;
+        top: 150px;
+    }
+
+    .review .bottom-left {
+        left: 10%;
+        bottom: 140px;
+    }
+
+
+    .review .bottom-right {
+        right: 5%;
+        bottom: 150px;
+    }
 }
 </style>
