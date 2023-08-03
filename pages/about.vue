@@ -5,7 +5,7 @@
     <Head>
         <Title>About</Title>
     </Head>
-    <Header url="/about"></Header>
+    <Header url="about"></Header>
     <OtherLanding name="About"></OtherLanding>
     <About></About>
     <Team></Team>

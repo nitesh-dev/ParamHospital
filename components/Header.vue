@@ -28,23 +28,23 @@ function toggleNav(){
                     <span></span>
                 </div>
 
-                <div :class="{ 'active': url == 'products' }">
-                    <NuxtLink to="products">Services</NuxtLink>
+                <div :class="{ 'active': url == 'services' }">
+                    <NuxtLink to="/services">Services</NuxtLink>
                     <span></span>
                 </div>
 
-                <div :class="{ 'active': url == 'reviews' }">
-                    <NuxtLink to="reviews">Facilities</NuxtLink>
+                <div :class="{ 'active': url == 'facilities' }">
+                    <NuxtLink to="/facilities">Facilities</NuxtLink>
                     <span></span>
                 </div>
 
-                <div :class="{ 'active': url == 'gallery' }">
-                    <NuxtLink to="/gallery">Review</NuxtLink>
+                <div :class="{ 'active': url == 'review' }">
+                    <NuxtLink to="/review">Review</NuxtLink>
                     <span></span>
                 </div>
 
-                <div :class="{ 'active': url == 'blog' }">
-                    <NuxtLink to="/blog">Team</NuxtLink>
+                <div :class="{ 'active': url == 'team' }">
+                    <NuxtLink to="/team">Team</NuxtLink>
                     <span></span>
                 </div>
 
@@ -54,7 +54,7 @@ function toggleNav(){
                 </div>
 
                 <div :class="{ 'active': url == 'contact' }">
-                    <NuxtLink to="contact">Contact Us</NuxtLink>
+                    <NuxtLink to="/contact">Contact Us</NuxtLink>
                     <span></span>
                 </div>
             </div>
