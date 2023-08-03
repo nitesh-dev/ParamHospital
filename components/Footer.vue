@@ -152,7 +152,7 @@ footer h3 {
     margin-top: 0.5em;
 }
 
-footer .background{
+footer .background {
     background-color: var(--color-surface-variant);
     width: 100%;
     height: 100%;
@@ -328,6 +328,10 @@ footer .out-right {
         grid-template-columns: 1fr 1fr;
     }
 
+    footer .subscribe {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -358,6 +362,21 @@ footer .out-right {
         position: absolute;
         bottom: 0;
         width: 200px;
+    }
+
+    footer .subscribe{
+        padding: 0.5rem;
+    }
+    footer .subscribe .input {
+        grid-template-columns: 100%;
+        background-color: transparent;
+        gap: 1rem;
+    }
+
+    footer .subscribe input {
+        background-color: #ecf0f3b4;
+        padding: 1em;
+        border-radius: 8px;
     }
 
 }
