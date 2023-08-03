@@ -12,6 +12,7 @@
     <About></About>
     <Team></Team>
     <Review></Review>
+    <Blog></Blog>
 
 
 
