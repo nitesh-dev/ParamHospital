@@ -123,6 +123,7 @@
 .landing {
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .landing .page {

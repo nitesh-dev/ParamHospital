@@ -84,7 +84,7 @@ data.push({
             <h5>Service</h5>
             <h2>Our Treatments</h2>
             <div class="container">
-                <div class="card" v-for="item, index in data" :class="{'card active': index == 0}">
+                <div class="card" v-for="item, index in data" :class="{ 'card active': index == 0 }">
 
                     <div>
                         <h4>{{ item.title }}</h4>
@@ -308,11 +308,11 @@ data.push({
     margin-bottom: 1.5rem;
 }
 
-.treatment .card h4{
+.treatment .card h4 {
     color: var(--color-primary);
 }
 
-.treatment .card a{
+.treatment .card a {
     font-weight: bold;
     color: var(--color-primary);
 }
@@ -341,24 +341,41 @@ data.push({
 
 /* ------------- active card ----------- */
 
-.treatment .card.active{
+.treatment .card.active {
     background-color: var(--color-primary);
 }
-.treatment .card.active h4{
+
+.treatment .card.active h4 {
     color: white;
 }
 
-.treatment .card.active .icon{
+.treatment .card.active .icon {
     background-color: var(--color-primary);
     stroke: white;
     border: 1px solid rgba(255, 255, 255, 0.61);
 }
 
-.treatment .card.active p{
+.treatment .card.active p {
     color: rgba(255, 255, 255, 0.651);
 }
 
-.treatment .card.active a{
+.treatment .card.active a {
     color: white;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .treatment .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .treatment .container {
+        grid-template-columns: 100%;
+    }
 }
 </style>
