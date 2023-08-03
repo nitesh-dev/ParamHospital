@@ -131,6 +131,7 @@ button.icon {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scroll {
+    scroll-behavior: smooth;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
