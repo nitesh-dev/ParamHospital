@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     // styleLang: 'css',
     // modules: ['navigation', 'pagination'], // all modules are imported by default
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: [
     '@/assets/styles/global.css',
   ],
@@ -20,5 +20,9 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' }
       ]
     }
-  }
+  },
+  ssr: false,
+  nitro: {
+    preset: 'service-worker'
+  },
 })
