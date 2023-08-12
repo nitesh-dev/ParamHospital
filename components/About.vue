@@ -29,11 +29,11 @@ const data = ['P - Polytrauma', 'A - Arthroplasty & Arthroscopy', 'R - Reconstru
                         <span>{{ item }}</span>
                     </p>
 
-                    <p>A Multi-speciality hospital with skilled medical professionals, High end equipment, Patient friendly
-                        infrastructure & Spirit to serve Humanity.
+                    <p>NABH (Entry Level) accredited & 51 bedded Multi-speciality hospital with Skilled medical professionals, High end Equipment, Patient friendly infrastructure & Spirit to serve Humanity
                     </p>
 
-                    <ArrowButton text="Learn More" />
+                    <br>
+                    <ArrowButton text="Make Appointment" />
 
                 </div>
                 <div class="image-holder">
