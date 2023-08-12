@@ -135,6 +135,7 @@ slideContent.push({
 .review {
     margin: 3rem 0;
     position: relative;
+    margin-top: 3rem !important;
 }
 
 .review .page {

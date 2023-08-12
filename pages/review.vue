@@ -8,7 +8,6 @@
     <Header url="review"></Header>
     <OtherLanding name="Review"></OtherLanding>
     <Review></Review>
-    <Facilities></Facilities>
     <Contact></Contact>
     <Footer></Footer>
 </template>
