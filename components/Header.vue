@@ -59,7 +59,7 @@ function toggleNav() {
                 </div>
             </div>
 
-            <ArrowButton text="Get Appointment" />
+            <NuxtLink to="/appointment"><ArrowButton text="Get Appointment" /></NuxtLink>
         </div>
     </header>
 
