@@ -7,8 +7,28 @@
     </Head>
     <Header url="contact"></Header>
     <OtherLanding name="Contact"></OtherLanding>
-    <Contact></Contact>
-    <Review></Review>
+    <div class="map">
+        <Contact></Contact>
+        <img src="../public/images/map.png" alt="map">
+    </div>
+    <br>
     <Footer></Footer>
 </template>
-<style scoped></style>
+<style scoped>
+
+.map{
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.map img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -10;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+</style>

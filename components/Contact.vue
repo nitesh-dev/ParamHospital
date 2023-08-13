@@ -44,6 +44,7 @@
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.08);
     min-height: 400px;
     align-items: center;
+    background-color: white;
     border-radius: 12px;
 }
 
@@ -81,6 +82,8 @@
     height: 100%;
     object-fit: cover;
     width: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .contact img.small {
