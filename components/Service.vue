@@ -1,4 +1,11 @@
 <script setup lang='ts'>
+import { Pagination } from 'swiper/modules';
+
+import slide1 from '~/public/images/slide/slide1.png'
+import slide2 from '~/public/images/slide/slide2.png'
+import slide3 from '~/public/images/slide/slide3.png'
+
+const swiperImages = [slide1, slide2, slide3, slide1, slide2, slide3]
 
 
 const content = Array<{
@@ -31,6 +38,15 @@ content.push({
     content: 'These procedures correct problems of anatomical alignment which limit function and could cause long-term problems if left untreated. This surgery is often carried out on babies and children for congenital deformities.'
 })
 
+
+function onSlideChange(e: any) {
+    console.log(e)
+
+}
+
+
+let activeIndex = ref(0);
+
 </script>
 <template>
     <section class="service">
@@ -42,8 +58,19 @@ content.push({
                 - ligaments, tendons, muscles and nerves. Trauma and orthopaedic surgery is often abbreviated to T&O
                 surgery.</p>
         </div>
-        <div class="swiper">
-            <h2>Swiper left</h2>
+        <div class="swiper-container">
+            <swiper @slideChange="activeIndex = $event.realIndex" :modules="[SwiperAutoplay]"
+                :slides-per-view="3" :pagination="true" :centeredSlides="true" :loop="true">
+                <swiper-slide v-for="(image, index) in swiperImages" :key="index" class="custom-slide">
+                    <img :src="image" />
+                </swiper-slide>
+
+            </swiper>
+
+            <div class="custom-pagination">
+                <div v-for="(image, index) in swiperImages" :key="index" class="custom-pagination-bullet"
+                    :class="{ active: index === activeIndex }"></div>
+            </div>
         </div>
 
         <div class="page">
@@ -85,6 +112,7 @@ content.push({
 <style scoped>
 .service {
     margin: 4rem 0;
+    overflow: hidden;
 }
 
 .service h5 {
@@ -106,9 +134,55 @@ content.push({
 
 
 /* ------------------ swiper ------------- */
-.service .swiper {
-    min-height: 250px;
-    background-color: rgb(238, 238, 238);
+.service .swiper-container {
+    margin: 2rem -2.5rem;
+    padding-bottom: 1rem;
+}
+
+.service .swiper-container img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    border-radius: 8px;
+}
+
+.service .swiper-slide-prev,
+.service .swiper-slide-next {
+    scale: 0.8;
+}
+
+.service .swiper-slide-active {
+    scale: 1 !important;
+}
+
+.service .swiper-slide {
+    transition: all 200ms linear;
+    scale: 0.8;
+}
+
+
+/*  */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.custom-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-pagination-bullet.active {
+  background-color: var(--color-primary);
+  width: 10px;
+  height: 10px;
 }
 
 

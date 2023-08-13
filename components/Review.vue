@@ -51,7 +51,27 @@ slideContent.push({
 })
 
 
+const autoPlay = {
+    delay: 3000,
+    disableOnInteraction: true,
+}
 
+
+const navigation = {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+}
+
+
+const effect = {
+    prev: {
+        shadow: false,
+        translate: ['-100%', 0, -1],
+    },
+    next: {
+        translate: ['100%', 0, 0],
+    },
+}
 
 </script>
 <template>
@@ -61,21 +81,7 @@ slideContent.push({
             <h2>Word From Our Customers</h2>
             <div class="container">
                 <Swiper :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]" :slides-per-view="1"
-                    :loop="true" :effect="'creative'" :autoplay="{
-                        delay: 3000,
-                        disableOnInteraction: true,
-                    }" :navigation="{
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-}" :creative-effect="{
-    prev: {
-        shadow: false,
-        translate: ['-100%', 0, -1],
-    },
-    next: {
-        translate: ['100%', 0, 0],
-    },
-}">
+                    :loop="true" :effect="'creative'" :autoplay="autoPlay" :navigation="navigation" :creative-effect="effect">
                     <SwiperSlide v-for="slide, index in slideContent" :key="index">
 
                         <div class="profile">
