@@ -7,8 +7,7 @@
     </Head>
     <Header url="services"></Header>
     <OtherLanding name="Services"></OtherLanding>
-    <Treatment></Treatment>
-    <Review></Review>
+    <Service></Service>
     <Contact></Contact>
     <Footer></Footer>
 </template>
