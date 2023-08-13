@@ -7,7 +7,7 @@
     </Head>
     <Header url="facilities"></Header>
     <OtherLanding name="Facilities"></OtherLanding>
-    <Facilities></Facilities>
+    <OPD></OPD>
     <Blog></Blog>
     <Review></Review>
     <Contact></Contact>
