@@ -92,6 +92,12 @@ function toggleNav() {
     </header>
 </template>
 <style scoped>
+
+
+
+header a button{
+    padding: 15px 20px;
+}
 header {
     background-color: var(--color-surface);
     width: 100%;
@@ -103,18 +109,18 @@ header .page {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 136px;
 }
 
 
 header .image-holder {
     position: relative;
-    width: 110px;
-    height: 60px;
+    width: 160px;
+    height: 76px;
 }
 
 header img {
-    height: 50px;
+    height: 70px;
     width: auto;
     position: absolute;
     top: 6px;
@@ -125,7 +131,7 @@ header img {
 
 header .center {
     display: flex;
-    gap: 1em;
+    gap: 40px;
 }
 
 header .center div {

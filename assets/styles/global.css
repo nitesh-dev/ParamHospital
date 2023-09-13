@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-    --max-page-width: 1280px;
+    --max-page-width: 1440px;
 
     --color-surface: rgb(255, 255, 255);
     --color-surface-variant: #E8F2FF;
@@ -20,11 +20,11 @@ body {
     --color-on-surface-variant: #7F7F7F;
 
 
-    --big-font: 38px;
-    --average-2-font: 24px;
-    --average-font: 20px;
-    --medium-font: 14px;
-    --medium-2-font: 16px;
+    --big-font: 50px;
+    --average-2-font: 40px;
+    --average-font: 24px;
+    --medium-font: 20px;
+    --medium-2-font: 17px;
     --small-font: 12px;
 
     text-rendering: optimizeLegibility;
@@ -78,7 +78,7 @@ h4 {
 }
 
 h5 {
-    font-size: var(--medium-font);
+    font-size: var(--average-font);
 }
 
 
