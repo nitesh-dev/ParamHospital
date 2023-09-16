@@ -25,7 +25,7 @@
 </template>
 <style scoped>
 .contact {
-    margin: 4rem 0;
+    margin: 100px 0;
 }
 
 .contact h2 {
@@ -49,7 +49,7 @@
 }
 
 .contact form .content {
-    padding: 1.5rem;
+    padding: 40px;
 }
 
 
