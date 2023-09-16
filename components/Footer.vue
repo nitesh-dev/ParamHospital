@@ -143,7 +143,7 @@
 </template>
 <style scoped>
 footer {
-    margin-top: 8rem;
+    margin-top: 200px;
     position: relative;
 }
 
@@ -167,11 +167,11 @@ footer .subscribe {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 40px 70px;
     background-color: white;
     box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.10);
     transform: translateY(-50%);
-    max-width: 900px;
+    max-width: 1240px;
     width: 100%;
     margin: auto;
 }
@@ -180,7 +180,7 @@ footer .subscribe .input {
     display: grid;
     grid-template-columns: 1fr max-content;
     height: max-content;
-    padding: 0.6rem 1rem;
+    padding: 15px;
     background-color: #ecf0f3b4;
     border-radius: 8px;
 }
@@ -195,7 +195,7 @@ footer .subscribe input {
 
 footer .content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
 }
 
@@ -207,9 +207,14 @@ footer .left img {
     max-width: 200px;
 }
 
+
+footer .left p{
+    font-size: var(--medium-font);
+}
+
 footer .socials {
     display: flex;
-    gap: 0.4rem;
+    gap: 10px;
     width: max-content;
 }
 
@@ -217,8 +222,8 @@ footer .socials a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     background-color: #e1e8f7;
     border-radius: 50%;
     fill: var(--color-primary);
@@ -231,13 +236,14 @@ footer .socials a:hover {
 
 footer .socials svg {
     fill: inherit;
-    width: 16px;
+    width: 20px;
 }
 
 
 /* ------------------ common ----------- */
 footer h4 {
     margin: 0;
+    font-size: 22px;
 }
 
 footer .common hr {
@@ -281,7 +287,7 @@ footer>hr {
 
 footer .copyright {
     text-align: center;
-    font-size: var(--small-font);
+    font-size: var(--medium-font);
     padding: 1rem 0;
     margin: 0;
 }

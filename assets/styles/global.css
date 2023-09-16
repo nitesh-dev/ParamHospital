@@ -25,7 +25,7 @@ body {
     --average-font: 24px;
     --medium-font: 18px;
     --medium-2-font: 20px;
-    --small-font: 12px;
+    --small-font: 16px;
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
