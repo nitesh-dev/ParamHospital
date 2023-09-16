@@ -192,9 +192,13 @@
   margin-bottom: 30px;
 }
 
+.landing button{
+  margin-top: 40px;
+}
+
 .landing .buttons {
   display: flex;
-  background-color: #ffffff80;
+  background-color: #ffffff52;
   padding: 0.8rem;
   gap: 20px;
   border-radius: 50px;
@@ -303,15 +307,17 @@
   left: 90px;
   top: 50%;
   gap: 8px;
+  border-radius: 15px;
 }
 
 .landing .card.horizontal {
   display: grid;
-  grid-template-columns: max-content 90px max-content max-content;
+  grid-template-columns: max-content 120px max-content max-content;
   gap: 8px;
   align-items: center;
   right: 0;
   bottom: 10%;
+  border-radius: 15px;
 }
 
 .landing .card.card.horizontal .icon {
