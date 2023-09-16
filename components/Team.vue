@@ -93,6 +93,10 @@ data.push({
     </section>
 </template>
 <style scoped>
+
+.team{
+    padding-top: 80px;
+}
 .team h5 {
     color: var(--color-primary);
     text-align: center;
@@ -107,6 +111,7 @@ data.push({
 .team h2 {
     margin-top: 0;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .team .card-container {
@@ -124,7 +129,8 @@ data.push({
 
 .team .detail {
     background-color: white;
-    width: 200px;
+    width: 100%;
+    max-width: 250px;
     padding: 0.5rem;
     margin: auto;
     transform: translateY(-50%);
@@ -150,7 +156,7 @@ data.push({
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.4rem;
+    gap: 15px;
 
 }
 

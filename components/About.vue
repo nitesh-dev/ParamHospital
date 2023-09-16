@@ -133,6 +133,7 @@ const data = ['P - Polytrauma', 'A - Arthroplasty & Arthroscopy', 'R - Reconstru
 
 .about h2 {
     margin: 0;
+    max-width: 450px;
 }
 
 .about .page {
@@ -188,8 +189,8 @@ const data = ['P - Polytrauma', 'A - Arthroplasty & Arthroscopy', 'R - Reconstru
     position: relative;
     background-color: white;
     border-radius: 8px;
-    padding: 0.5rem;
-    max-width: 200px;
+    padding: 15px;
+    max-width: 245px;
 }
 
 .about .card div {
