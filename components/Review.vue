@@ -140,14 +140,13 @@ const effect = {
 </template>
 <style scoped>
 .review {
-    margin: 3rem 0;
+    margin: 100px 0;
     position: relative;
-    margin-top: 3rem !important;
 }
 
 .review .page {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 .review .container {
@@ -203,8 +202,8 @@ const effect = {
 /* --------------------------- mini icons ---------------- */
 
 .review .mini {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     position: absolute;
     z-index: -1;
@@ -212,7 +211,7 @@ const effect = {
 
 .review .top-left {
     left: 20%;
-    top: 110px;
+    top: 150px;
 }
 
 .review .top-right {
@@ -222,13 +221,13 @@ const effect = {
 
 .review .bottom-left {
     left: 10%;
-    bottom: 40px;
+    bottom: 60px;
 }
 
 
 .review .bottom-right {
     right: 5%;
-    bottom: 70px;
+    bottom: 90px;
 }
 
 
