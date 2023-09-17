@@ -20,13 +20,14 @@ defineProps<{
 <style scoped>
 .landing {
     position: relative;
+    margin-bottom: 100px;
 }
 
 .landing h1 {
-    font-size: calc(var(--big-font) - 4px);
+    font-size: var(--big-font);
 }
 
-.landing .background{
+.landing .background {
     position: absolute;
     z-index: -4;
     background-color: var(--color-surface-variant);
@@ -36,26 +37,26 @@ defineProps<{
     top: 0;
 }
 
-.landing .circle{
+.landing .circle {
     position: absolute;
     z-index: -3;
     background-color: #5472b910;
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
     left: -60px;
-    top: -60px;
+    top: -80px;
     border-radius: 50%;
 }
 
 .landing .page {
-    height: 200px;
+    height: 365px;
     display: flex;
     align-items: center;
     position: relative;
 }
 
 
-.landing .image-holder{
+.landing .image-holder {
     position: absolute;
     top: 0;
     right: 0;
@@ -64,19 +65,40 @@ defineProps<{
 }
 
 
-.landing .image-holder img:first-child{
+.landing .image-holder img:first-child {
     height: 100%;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.landing .image-holder img:last-child{
+.landing .image-holder img:last-child {
     height: 100%;
     position: absolute;
     right: 50%;
     top: 0;
     transform: translateX(50%);
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .landing .circle {
+        height: 200px;
+        width: 200px;
+        left: -80px;
+        top: -80px;
+
+    }
+
+    .landing .page {
+        height: 175px;
+    }
+
+    .landing {
+        margin-bottom: 40px;
+    }
 
 }
 </style>

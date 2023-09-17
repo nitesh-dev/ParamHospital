@@ -82,7 +82,8 @@ const effect = {
             <h2>Word From Our Customers</h2>
             <div class="container">
                 <Swiper :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]" :slides-per-view="1"
-                    :loop="true" :effect="'creative'" :autoplay="autoPlay" :navigation="navigation" :creative-effect="effect">
+                    :loop="true" :effect="'creative'" :autoplay="autoPlay" :navigation="navigation"
+                    :creative-effect="effect">
                     <SwiperSlide v-for="slide, index in slideContent" :key="index">
 
                         <div class="profile">
@@ -140,14 +141,13 @@ const effect = {
 </template>
 <style scoped>
 .review {
-    margin: 3rem 0;
+    margin: 100px 0;
     position: relative;
-    margin-top: 3rem !important;
 }
 
 .review .page {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 .review .container {
@@ -203,8 +203,8 @@ const effect = {
 /* --------------------------- mini icons ---------------- */
 
 .review .mini {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     position: absolute;
     z-index: -1;
@@ -212,7 +212,7 @@ const effect = {
 
 .review .top-left {
     left: 20%;
-    top: 110px;
+    top: 150px;
 }
 
 .review .top-right {
@@ -222,13 +222,13 @@ const effect = {
 
 .review .bottom-left {
     left: 10%;
-    bottom: 40px;
+    bottom: 60px;
 }
 
 
 .review .bottom-right {
     right: 5%;
-    bottom: 70px;
+    bottom: 90px;
 }
 
 
@@ -338,6 +338,27 @@ const effect = {
     .review .bottom-right {
         right: 5%;
         bottom: 150px;
+    }
+
+    .review .page {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .review>.left {
+        left: 0;
+        width: 30%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .review>.right {
+        right: 0;
+        width: 30%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 </style>

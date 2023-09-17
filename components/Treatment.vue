@@ -5,6 +5,9 @@ const data = Array<{
     url: string,
 }>()
 
+const router = useRouter()
+const { params } = router.currentRoute.value
+
 data.push({
     title: 'Orthopedics & Trauma',
     text: 'Trauma and orthopaedic surgeons diagnose and treat a wide range of conditions of the.',
@@ -103,8 +106,8 @@ function scrollRight() {
                     <div>
                         <h4>{{ item.title }}</h4>
                         <p>{{ item.text }}</p>
-                        <a v-if="index == 0" href="#">Read More &#8594;</a>
-                        <a v-else href="#">&#8594;</a>
+                        <a v-if="index == 0" :href="'/services/readmore/' + item.title">Read More &#8594;</a>
+                        <a v-else :href="'/services/readmore/' + item.title">&#8594;</a>
 
 
 
@@ -324,38 +327,54 @@ function scrollRight() {
 .treatment h2 {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 90px;
 }
 
 .treatment .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0.8rem;
+    gap: 20px;
 }
 
 .treatment .card {
     border: 1px solid rgba(236, 236, 236, 0.849);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 83px 35px 27px 35px;
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 44px;
 }
 
 .treatment .card h4 {
     color: var(--color-primary);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.treatment .card p{
+    font-size: 18px;
 }
 
 .treatment .card a {
-    font-weight: bold;
     color: var(--color-primary);
+    font-size: 20px;
+    display: block;
+    margin-top: auto;
+
+}
+
+.treatment .card>div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .treatment .icon {
     position: absolute;
     top: 0;
     left: 20px;
-    width: 50px;
-    height: 50px;
+    width: 87px;
+    height: 87px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,12 +382,13 @@ function scrollRight() {
     background-color: white;
     box-shadow: 0px 4px 30px 0px rgba(51, 51, 51, 0.1);
     stroke: var(--color-primary);
+    border-radius: 8px;
 
 }
 
 .treatment .icon svg {
     stroke: inherit;
-    width: 30px;
+    width: 50px;
 }
 
 
@@ -429,7 +449,7 @@ function scrollRight() {
     .treatment .container {
         display: flex;
         overflow: auto;
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 
     .treatment .card {

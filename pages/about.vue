@@ -6,14 +6,13 @@
         <Title>About</Title>
     </Head>
     <Header url="about"></Header>
-    <OtherLanding name="About"></OtherLanding>
+    <OtherLanding name="About us"></OtherLanding>
     <About></About>
     <section class="slogan">
         <div class="page">
             <div>
                 <h2>Our Vision</h2>
-                <p>Commitment towards patient Care, Cure & Quality Health. Commitment towards patient Care, Cure & Quality
-                    Health.
+                <p>Commitment towards patient Care, Cure & Quality Health. Commitment towards patient Care, Cure & Quality Health.
                 </p>
             </div>
             <span class="line"></span>
@@ -35,9 +34,9 @@
 .slogan .page {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
-    gap: 3rem;
+    gap: 80px;
     align-items: center;
-    padding: 2rem;
+    padding: 50px;
 }
 
 .slogan h2 {

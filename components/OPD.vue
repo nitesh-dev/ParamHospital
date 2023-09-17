@@ -159,15 +159,10 @@ function scrollRight() {
 
 
 .opd .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
     /* overflow: auto; */
-    justify-content: center;
-}
-
-.opd .card {
-    min-width: 300px;
-    width: 300px;
 }
 
 .opd .card>div {
@@ -180,13 +175,13 @@ function scrollRight() {
 .opd .card img {
     border-radius: 8px 8px 0 0;
     width: 100%;
-    height: 170px;
+    height: 290px;
     object-fit: cover;
 
 }
 
 .opd .content {
-    padding: 1rem;
+    padding: 34px;
     padding-bottom: 2rem;
 }
 
@@ -225,6 +220,12 @@ function scrollRight() {
 }
 
 
+@media only screen and (max-width: 1000px) {
+    .opd .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 
 
 @media only screen and (max-width: 700px) {
@@ -233,7 +234,13 @@ function scrollRight() {
         overflow: auto;
         flex-wrap: nowrap;
         justify-content: unset;
+
     }
+
+    .opd .card {
+        min-width: 400px;
+    }
+
 
     .opd .card>div {
         border-radius: 8px;

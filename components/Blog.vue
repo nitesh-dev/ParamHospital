@@ -88,7 +88,7 @@ function scrollRight() {
                         <div class="content">
                             <h4>{{ item.title }}</h4>
                             <p>{{ item.text }}</p>
-                            <a :href="item.url">Read More &#8594;</a>
+                            <a :href="'/blog/readmore/' + item.title">Read More &#8594;</a>
                         </div>
                         <img class="health" src="../public/images/outlines/health.png" alt="health">
                     </div>
@@ -124,6 +124,7 @@ function scrollRight() {
 .blog .page {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 50px;
 }
 
 
@@ -155,8 +156,8 @@ function scrollRight() {
 }
 
 .blog .card {
-    min-width: 300px;
-    width: 300px;
+    min-width: 402px;
+    width: 402px;
 }
 
 .blog .card>div {
@@ -169,13 +170,13 @@ function scrollRight() {
 .blog .card .image-holder img {
     border-radius: 8px 8px 0 0;
     width: 100%;
-    height: 170px;
+    height: 270px;
     object-fit: cover;
 
 }
 
 .blog .content {
-    padding: 1rem;
+    padding: 30px;
 }
 
 .blog .content h4 {
@@ -205,7 +206,7 @@ function scrollRight() {
 }
 
 .blog .health {
-    width: 50px;
+    width: 74px;
     height: auto;
     position: absolute;
     right: 0.4rem;

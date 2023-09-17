@@ -133,7 +133,7 @@
 .landing .page {
   position: relative;
   display: flex;
-  min-height: 600px;
+  min-height: 950px;
   align-items: center;
 }
 
@@ -162,7 +162,7 @@
 /* ----------------- content ---------------- */
 
 .landing .content {
-  max-width: 500px;
+  max-width: 650px;
 }
 
 .landing h1 {
@@ -171,7 +171,7 @@
 }
 
 .landing p.outline {
-  font-size: var(--small-font);
+  font-size: var(--medium-2-font);
   color: black;
   font-weight: bold;
   display: flex;
@@ -179,19 +179,31 @@
   gap: 0.4rem;
 }
 
+.landing p.outline span {
+  font-size: inherit;
+}
+
 .landing h1 span {
   font-size: inherit;
   color: var(--color-primary);
 }
 
+.landing p {
+  margin-bottom: 30px;
+}
+
+.landing button {
+  margin-top: 40px;
+}
+
 .landing .buttons {
   display: flex;
-  background-color: #ffffff80;
-  padding: 0.6rem;
-  gap: 0.4rem;
+  background-color: #ffffff52;
+  padding: 0.8rem;
+  gap: 20px;
   border-radius: 50px;
   width: max-content;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .landing .message-phone {
@@ -295,15 +307,17 @@
   left: 90px;
   top: 50%;
   gap: 8px;
+  border-radius: 15px;
 }
 
 .landing .card.horizontal {
   display: grid;
-  grid-template-columns: max-content 90px max-content max-content;
+  grid-template-columns: max-content 120px max-content max-content;
   gap: 8px;
   align-items: center;
   right: 0;
   bottom: 10%;
+  border-radius: 15px;
 }
 
 .landing .card.card.horizontal .icon {
@@ -362,6 +376,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  .landing .page {
+    min-height: 700px;
+  }
+
   .desktop {
     display: none !important;
   }

@@ -29,7 +29,8 @@ const data = ['P - Polytrauma', 'A - Arthroplasty & Arthroscopy', 'R - Reconstru
                         <span>{{ item }}</span>
                     </p>
 
-                    <p>NABH (Entry Level) accredited & 51 bedded Multi-speciality hospital with Skilled medical professionals, High end Equipment, Patient friendly infrastructure & Spirit to serve Humanity
+                    <p>NABH (Entry Level) accredited & 51 bedded Multi-speciality hospital with Skilled medical
+                        professionals, High end Equipment, Patient friendly infrastructure & Spirit to serve Humanity
                     </p>
 
                     <br>
@@ -41,7 +42,7 @@ const data = ['P - Polytrauma', 'A - Arthroplasty & Arthroscopy', 'R - Reconstru
                 </div>
             </div>
 
-            <div class="card-container hide-scroll">
+            <div class="card-container">
                 <div class="card" v-for="item, index in 3">
                     <div>
                         <!-- icons -->
@@ -133,6 +134,7 @@ const data = ['P - Polytrauma', 'A - Arthroplasty & Arthroscopy', 'R - Reconstru
 
 .about h2 {
     margin: 0;
+    max-width: 450px;
 }
 
 .about .page {
@@ -188,8 +190,8 @@ const data = ['P - Polytrauma', 'A - Arthroplasty & Arthroscopy', 'R - Reconstru
     position: relative;
     background-color: white;
     border-radius: 8px;
-    padding: 0.5rem;
-    max-width: 200px;
+    padding: 15px;
+    max-width: 245px;
 }
 
 .about .card div {
@@ -238,22 +240,30 @@ const data = ['P - Polytrauma', 'A - Arthroplasty & Arthroscopy', 'R - Reconstru
         flex-direction: column-reverse;
     }
 
-    .about .page .image-holder img{
+    .about .page .image-holder img {
         width: 80%;
         display: block;
         margin: auto;
     }
 
     .about .card-container {
+        margin-top: 40px;
         width: 100%;
-        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
         padding: 1rem 0.4rem;
+        justify-content: center;
+        transform:  translateY(0);
     }
 
-    .about .card-container .card{
+
+    .about .card-container .card {
         max-width: unset;
-        width: 250px;
-        min-width: 250px;
+        width: 180px;
+    }
+
+    .about {
+        margin-bottom: 0;
     }
 }
 </style>

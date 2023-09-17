@@ -83,7 +83,7 @@ function scrollRight() {
                         <div class="content">
                             <h4>{{ item.title }}</h4>
                             <p>{{ item.text }}</p>
-                            <a :href="item.url">Read More &#8594;</a>
+                            <a :href="'/facilities/readmore/' + item.title">Read More &#8594;</a>
                             <span class="label">0{{ index + 1 }}</span>
                         </div>
 
@@ -113,7 +113,7 @@ function scrollRight() {
 </template>
 <style scoped>
 .facility {
-    margin: 4rem 0;
+    margin: 100px 0;
 }
 
 .facility h5 {
@@ -125,6 +125,7 @@ function scrollRight() {
 .facility h2 {
     text-align: center;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 
@@ -134,8 +135,8 @@ function scrollRight() {
 }
 
 .facility .card {
-    min-width: 300px;
-    width: 300px;
+    min-width: 464px;
+    width: 464px;
 }
 
 .facility .card>div {
@@ -148,17 +149,19 @@ function scrollRight() {
 .facility .card img {
     border-radius: 8px 8px 0 0;
     width: 100%;
-    height: 170px;
+    height: 290px;
     object-fit: cover;
 
 }
 
 .facility .content {
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 .facility .content h4 {
     margin: 0;
+    font-size: 24px;
     color: var(--color-primary);
 }
 
@@ -167,7 +170,7 @@ function scrollRight() {
 }
 
 .facility .content .label {
-    font-size: calc(var(--big-font) - 8px);
+    font-size: var(--big-font);
     position: absolute;
     right: 1rem;
     bottom: 0.2rem;
@@ -187,5 +190,16 @@ function scrollRight() {
 
 .facility button.left svg {
     rotate: 180deg;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .facility .card {
+        min-width: 100%;
+        width: 100%;
+    }
 }
 </style>

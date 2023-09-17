@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-    --max-page-width: 1280px;
+    --max-page-width: 1440px;
 
     --color-surface: rgb(255, 255, 255);
     --color-surface-variant: #E8F2FF;
@@ -20,12 +20,12 @@ body {
     --color-on-surface-variant: #7F7F7F;
 
 
-    --big-font: 38px;
-    --average-2-font: 24px;
-    --average-font: 20px;
-    --medium-font: 14px;
-    --medium-2-font: 16px;
-    --small-font: 12px;
+    --big-font: 50px;
+    --average-2-font: 40px;
+    --average-font: 24px;
+    --medium-font: 18px;
+    --medium-2-font: 20px;
+    --small-font: 16px;
 
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -78,7 +78,7 @@ h4 {
 }
 
 h5 {
-    font-size: var(--medium-font);
+    font-size: var(--average-font);
 }
 
 
@@ -152,21 +152,16 @@ button.icon {
 
 
 @media only screen and (max-width: 700px) {
-    .page {
-        padding: 0 16px;
-    }
 
-    h1 {
-        font-size: calc(var(--big-font) - 12px);
+    :root{
+        --big-font: 24px;
+        --average-2-font: 32px;
+        --average-font: 18px;
+        --medium-font: 14px;
+        --medium-2-font: 16px;
+        --small-font: 12px;
     }
     
-    h2 {
-        font-size: calc(var(--average-2-font) - 4px);
-    }
-    
-    h3 {
-        font-size: calc(var(--average-font) - 2px);
-    }
     
 }
 

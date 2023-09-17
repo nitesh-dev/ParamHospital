@@ -128,27 +128,28 @@ let activeIndex = ref(0);
 
 .service p.middle {
     text-align: center;
-    max-width: 800px;
+    max-width: 1260px;
     margin: auto;
 }
 
 
 /* ------------------ swiper ------------- */
 .service .swiper-container {
-    margin: 2rem -2.5rem;
+    margin: 50px -2.5rem;
     padding-bottom: 1rem;
+    margin-bottom: 100px;
 }
 
 .service .swiper-container img {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 4/3;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .service .swiper-slide-prev,
 .service .swiper-slide-next {
-    scale: 0.8;
+    scale: 0.9;
 }
 
 .service .swiper-slide-active {
@@ -157,7 +158,7 @@ let activeIndex = ref(0);
 
 .service .swiper-slide {
     transition: all 200ms linear;
-    scale: 0.8;
+    scale: 0.9;
 }
 
 
