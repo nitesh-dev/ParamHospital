@@ -20,10 +20,11 @@ defineProps<{
 <style scoped>
 .landing {
     position: relative;
+    margin-bottom: 100px;
 }
 
 .landing h1 {
-    font-size: calc(var(--big-font) - 4px);
+    font-size: var(--big-font);
 }
 
 .landing .background{
@@ -40,15 +41,15 @@ defineProps<{
     position: absolute;
     z-index: -3;
     background-color: #5472b910;
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 400px;
     left: -60px;
-    top: -60px;
+    top: -80px;
     border-radius: 50%;
 }
 
 .landing .page {
-    height: 200px;
+    height: 365px;
     display: flex;
     align-items: center;
     position: relative;
