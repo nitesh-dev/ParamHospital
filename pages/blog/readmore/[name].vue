@@ -17,7 +17,7 @@
                 over 2000 years old. Richard McClintock, a Latin professor at Hampden.
             </p>
             <div class="news">
-                <img src="../public/images/blog/news.png">
+                <img src="../../../public/images/blog/news.png">
                 <div class="content">
                     <h3>From its medieval origins to the digital era everything</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis massa vitae ligula accumsan,
@@ -53,9 +53,9 @@
 <style scoped>
 .blog p.middle {
     text-align: center;
-    max-width: 1000px;
+    max-width: 1260px;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .blog h5 {
@@ -82,6 +82,7 @@
 
 .blog .news h3 {
     margin-top: 0;
+    font-size: 35px;
 }
 
 .blog .news img {

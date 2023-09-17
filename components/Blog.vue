@@ -88,7 +88,7 @@ function scrollRight() {
                         <div class="content">
                             <h4>{{ item.title }}</h4>
                             <p>{{ item.text }}</p>
-                            <a :href="item.url">Read More &#8594;</a>
+                            <a :href="'/blog/readmore/' + item.title">Read More &#8594;</a>
                         </div>
                         <img class="health" src="../public/images/outlines/health.png" alt="health">
                     </div>
