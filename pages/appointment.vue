@@ -49,14 +49,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 520px;
     z-index: -1;
 }
 
 .appoint .page {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    padding-top: 3rem;
+    padding-top: 80px;
     gap: 2rem;
 }
 
