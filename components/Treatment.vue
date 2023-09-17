@@ -5,6 +5,9 @@ const data = Array<{
     url: string,
 }>()
 
+const router = useRouter()
+const { params } = router.currentRoute.value
+
 data.push({
     title: 'Orthopedics & Trauma',
     text: 'Trauma and orthopaedic surgeons diagnose and treat a wide range of conditions of the.',
@@ -103,8 +106,8 @@ function scrollRight() {
                     <div>
                         <h4>{{ item.title }}</h4>
                         <p>{{ item.text }}</p>
-                        <a v-if="index == 0" href="#">Read More &#8594;</a>
-                        <a v-else href="#">&#8594;</a>
+                        <a v-if="index == 0" :href="'/services/readmore/' + item.title">Read More &#8594;</a>
+                        <a v-else :href="'/services/readmore/' + item.title">&#8594;</a>
 
 
 
