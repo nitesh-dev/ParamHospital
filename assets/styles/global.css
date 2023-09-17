@@ -152,21 +152,16 @@ button.icon {
 
 
 @media only screen and (max-width: 700px) {
-    .page {
-        padding: 0 16px;
-    }
 
-    h1 {
-        font-size: calc(var(--big-font) - 12px);
+    :root{
+        --big-font: 24px;
+        --average-2-font: 32px;
+        --average-font: 18px;
+        --medium-font: 14px;
+        --medium-2-font: 16px;
+        --small-font: 12px;
     }
     
-    h2 {
-        font-size: calc(var(--average-2-font) - 4px);
-    }
-    
-    h3 {
-        font-size: calc(var(--average-font) - 2px);
-    }
     
 }
 

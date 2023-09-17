@@ -181,7 +181,7 @@ data.push({
     margin-bottom: 2rem;
 }
 
-.team .card{
+.team .card {
     margin-top: 50px;
 }
 
@@ -277,11 +277,11 @@ data.push({
         gap: 3rem;
     }
 
-    .team .button-holder{
+    .team .button-holder {
         display: none;
     }
 
-    .team .card>h4{
+    .team .card>h4 {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -289,6 +289,11 @@ data.push({
 
     .team .content h4 {
         width: max-content;
+    }
+
+    .team .image-holder {
+
+        height: 400px;
     }
 }
 </style>

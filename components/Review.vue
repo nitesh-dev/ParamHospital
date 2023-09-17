@@ -82,7 +82,8 @@ const effect = {
             <h2>Word From Our Customers</h2>
             <div class="container">
                 <Swiper :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]" :slides-per-view="1"
-                    :loop="true" :effect="'creative'" :autoplay="autoPlay" :navigation="navigation" :creative-effect="effect">
+                    :loop="true" :effect="'creative'" :autoplay="autoPlay" :navigation="navigation"
+                    :creative-effect="effect">
                     <SwiperSlide v-for="slide, index in slideContent" :key="index">
 
                         <div class="profile">
@@ -337,6 +338,27 @@ const effect = {
     .review .bottom-right {
         right: 5%;
         bottom: 150px;
+    }
+
+    .review .page {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .review>.left {
+        left: 0;
+        width: 30%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .review>.right {
+        right: 0;
+        width: 30%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 </style>

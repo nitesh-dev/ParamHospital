@@ -179,7 +179,7 @@
   gap: 0.4rem;
 }
 
-.landing p.outline span{
+.landing p.outline span {
   font-size: inherit;
 }
 
@@ -188,11 +188,11 @@
   color: var(--color-primary);
 }
 
-.landing p{
+.landing p {
   margin-bottom: 30px;
 }
 
-.landing button{
+.landing button {
   margin-top: 40px;
 }
 
@@ -376,6 +376,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  .landing .page {
+    min-height: 700px;
+  }
+
   .desktop {
     display: none !important;
   }

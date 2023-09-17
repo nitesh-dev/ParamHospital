@@ -59,7 +59,9 @@ function toggleNav() {
                 </div>
             </div>
 
-            <NuxtLink to="/appointment"><ArrowButton text="Get Appointment" /></NuxtLink>
+            <NuxtLink to="/appointment">
+                <ArrowButton text="Get Appointment" />
+            </NuxtLink>
         </div>
     </header>
 
@@ -92,12 +94,10 @@ function toggleNav() {
     </header>
 </template>
 <style scoped>
-
-
-
-header a button{
+header a button {
     padding: 15px 20px;
 }
+
 header {
     background-color: var(--color-surface);
     width: 100%;
@@ -166,18 +166,19 @@ header .center .active span {
 }
 
 
-header.phone button{
+header.phone button {
     border: none;
     background-color: transparent;
 }
+
 header.phone .page {
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header.phone .icon-button svg{
+header.phone .icon-button svg {
     fill: var(--color-primary);
 }
 
@@ -231,13 +232,19 @@ header .nav a {
 
 
 
+@media only screen and (max-width: 1300px) {
+    header .center {
+        gap: 24px;
+    }
+
+}
 
 
-@media only screen and (max-width: 950px) {
+
+@media only screen and (max-width: 1200px) {
     .desktop {
         display: none !important;
     }
-
     .phone {
         display: block;
     }

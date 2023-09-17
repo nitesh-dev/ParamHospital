@@ -449,7 +449,7 @@ function scrollRight() {
     .treatment .container {
         display: flex;
         overflow: auto;
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 
     .treatment .card {

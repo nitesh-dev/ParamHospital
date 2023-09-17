@@ -191,4 +191,15 @@ function scrollRight() {
 .facility button.left svg {
     rotate: 180deg;
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .facility .card {
+        min-width: 100%;
+        width: 100%;
+    }
+}
 </style>
