@@ -181,6 +181,10 @@ data.push({
     margin-bottom: 2rem;
 }
 
+.team .card{
+    margin-top: 50px;
+}
+
 .team .card h4 {
     border-bottom: 1px solid rgb(221, 221, 221);
     padding-bottom: 0.5em;
@@ -200,7 +204,7 @@ data.push({
 .team .image-holder {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 560px;
 }
 
 .team .image-holder img {

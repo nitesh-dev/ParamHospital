@@ -125,6 +125,7 @@ data.push({
     width: 100%;
     aspect-ratio: 150/160;
     object-fit: cover;
+
 }
 
 .team .detail {
